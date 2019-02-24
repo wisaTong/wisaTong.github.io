@@ -48,7 +48,7 @@ function scrollMoveV() {
   if (scroll < me.offsetHeight) {
     setStyle(navItems[0], active)
     if (scroll > 0) {
-      decorators[0].style.top = (tops[0] + scroll / 2) + 'px';
+      decorators[0].style.top = (tops[0] + scroll / 1.75) + 'px';
       decorators[2].style.top = (tops[2] + scroll / 3) + 'px';
     }
   } else if (scroll < exp.offsetHeight + exp.offsetTop) {

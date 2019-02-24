@@ -26,7 +26,7 @@ html {
   position: fixed;
   width: 100%;
   height: 50px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -105,14 +105,16 @@ section.me {
   left: 70px;
   font-size: 9rem;
   color: var(--light-shade-3);
+  z-index: 1;
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', serif;
   font-size: 1.8rem;
+  font-weight: 300;
   color: var(--light-shade-3);
   word-wrap: break-word;
   width: 38vw;
@@ -124,7 +126,7 @@ section.me {
 section.exp {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   height: 110vh;
   width: 70vw;
@@ -132,6 +134,7 @@ section.exp {
   padding-top: 120px;
   font-family: 'Roboto', sans-serif;
   color: var(--light-shade-3);
+  position: relative;
 }
 
 .exp-container {
@@ -156,23 +159,19 @@ section.exp h4 .desc {
 }
 
 section.exp .detail {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 section.exp > div {
   position: relative;
 }
 
-#exp-1 {
-  top: 0px;
-}
-
-#exp-2 {
-  top: 240px;
-}
-
-#exp-3 {
-  top: 120px;
+.h-exp {
+  color: var(--light-shade-1);
+  font-size: 6rem;
+  position: absolute;
+  top: 350px;
+  right: -320px;
 }
 
 @media screen and (max-width: 800px) {
@@ -198,6 +197,10 @@ section.exp > div {
     font-size: 4vw;
     width: 100%;
     left: 0px;
+  }
+
+  section.me {
+    padding-top: 50px;
   }
 
   section.exp {

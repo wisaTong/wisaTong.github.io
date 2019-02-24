@@ -82,6 +82,12 @@ section.me {
   padding-top: 100px;
 }
 
+@media screen and (max-width: 800px) {
+  section.me {
+    padding-top: 50px;
+  }
+}
+
 .v-decorator {
   font-family: 'Playfair Display', serif;
   font-size: 6rem;
@@ -102,10 +108,22 @@ section.me {
   top: 400px;
 }
 
+@media screen and (max-width: 800px) {
+  .v-decorator.me {
+    left: -20%;
+  }
+}
+
 .v-decorator.about {
   position: absolute;
   left: 23%;
   top: 340px;
+}
+
+@media screen and (max-width: 800px) {
+  .v-decorator.about {
+    left: 35%;
+  }
 }
 
 .rotate-90 {
@@ -125,6 +143,13 @@ section.me {
   z-index: 1;
 }
 
+@media screen and (max-width: 800px) {
+  .h-name {
+    left: 0px;
+    font-size: 24vw;
+  }
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -140,6 +165,14 @@ section.me {
   left: 35%;
 }
 
+@media screen and (max-width: 800px) {
+  .about-me {
+    font-size: 4vw;
+    width: 100%;
+    left: 0px;
+  }
+}
+
 section.exp {
   display: flex;
   flex-direction: row;
@@ -152,6 +185,12 @@ section.exp {
   font-family: 'Roboto', sans-serif;
   color: var(--light-shade-3);
   position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  section.exp {
+    height: max-content;
+  }
 }
 
 .h-exp {
@@ -177,8 +216,8 @@ section.exp {
 @media screen and (max-width: 800px) {
   .exp-container {
     /* one entry per row */
-    width: 90%; 
-  }  
+    width: 90%;
+  }
 }
 
 .number {
@@ -207,34 +246,7 @@ section.exp > div {
 }
 
 @media screen and (max-width: 800px) {
-  .h-name {
-    left: 0px;
-    font-size: 25vw;
-  }
-
-  .about-me {
-    font-size: 4vw;
-    width: 100%;
-    left: 0px;
-  }
-
-  section.me {
-    padding-top: 50px;
-  }
-
-  section.exp {
-    height: max-content;
-  }
-
-  .v-decorator.me {
-    left: -20%;
-  }
-
-  .v-decorator.about {
-    left: 35%;
-  }
-
-  #exp-1, #exp-2, #exp-3 {
+  #exp-1, #exp-2, #exp-3, #exp-4, #exp-5 {
     top: 0px;
     left: 0px;
     right: 0px;

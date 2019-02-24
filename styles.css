@@ -62,7 +62,7 @@ section.me {
   height: 80vh;
   width: 70vw;
   margin: auto;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .v-decorator {
@@ -75,20 +75,20 @@ section.me {
 .v-decorator.name {
   position: absolute;
   left: -5.75%;
-  top: 120px;
+  top: 150px;
 }
 
 .v-decorator.me {
   font-size: 12rem;
   position: absolute;
   left: 6%;
-  top: 370px;
+  top: 400px;
 }
 
 .v-decorator.about {
   position: absolute;
   left: 23%;
-  top: 320px;
+  top: 340px;
 }
 
 .rotate-90 {
@@ -125,6 +125,7 @@ section.exp {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 110vh;
   width: 70vw;
   margin: auto;
@@ -134,7 +135,7 @@ section.exp {
 }
 
 .exp-container {
-  width: 20%;
+  width: 21%;
 }
 
 .number {
@@ -156,4 +157,60 @@ section.exp h4 .desc {
 
 section.exp .detail {
   font-family: 'Playfair Display', serif;
+}
+
+section.exp > div {
+  position: relative;
+}
+
+#exp-1 {
+  top: 0px;
+}
+
+#exp-2 {
+  top: 240px;
+}
+
+#exp-3 {
+  top: 120px;
+}
+
+@media screen and (max-width: 800px) {
+  .exp-container {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .page {
+    height: min-content;
+  }
+
+  .h-name {
+    left: 0px;
+    font-size: 25vw;
+  }
+
+  .about-me {
+    font-size: 4vw;
+    width: 100%;
+    left: 0px;
+  }
+
+  section.exp {
+    height: max-content;
+  }
+
+  .v-decorator.me {
+    left: -20%;
+  }
+
+  .v-decorator.about {
+    left: 35%;
+  }
+
+  #exp-1, #exp-2, #exp-3 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
 }

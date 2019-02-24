@@ -30,6 +30,9 @@ const navItems = [
 const decorators = document.getElementsByClassName('v-decorator');
 const tops = [].slice.call(decorators).map(dec => dec.offsetTop);
 
+const hExp = document.getElementById('h-exp');
+const hExpTop = hExp.offsetTop;
+
 setStyle(navItems[0], active);
 
 function scrollMoveV() {
@@ -53,6 +56,8 @@ function scrollMoveV() {
     }
   } else if (scroll < exp.offsetHeight + exp.offsetTop) {
     setStyle(navItems[1], active)
+    var offsetTop = exp.offsetTop - 50;
+    hExp.style.top = (hExpTop + (scroll - offsetTop) / 1.2) + 'px';
   } else if (scroll < work.offsetHeight + work.offsetTop) {
     setStyle(navItems[2], active)
   } else if (scroll < contact.offsetHeight + contact.offsetTop) {

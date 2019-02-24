@@ -20,6 +20,7 @@ html {
   scroll-behavior: smooth;
   font-family: 'Archivo', sans-serif;
   font-weight: 500;
+  cursor: url('cursor.png') 60 60, auto;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   position: fixed;
   width: 100%;
   height: 50px;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -79,7 +80,7 @@ section.me {
   height: 80vh;
   width: 70vw;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 @media screen and (max-width: 800px) {
@@ -93,19 +94,20 @@ section.me {
   font-size: 6rem;
   font-weight: 700;
   color: var(--dark-shade-0);
+  transition: top 0.2s ease-out;
 }
 
 .v-decorator.name {
   position: absolute;
   left: -5.75%;
-  top: 150px;
+  top: 250px;
 }
 
 .v-decorator.me {
   font-size: 12rem;
   position: absolute;
   left: 6%;
-  top: 400px;
+  top: 500px;
 }
 
 @media screen and (max-width: 800px) {
@@ -117,7 +119,7 @@ section.me {
 .v-decorator.about {
   position: absolute;
   left: 23%;
-  top: 340px;
+  top: 440px;
 }
 
 @media screen and (max-width: 800px) {
@@ -140,7 +142,7 @@ section.me {
   left: 70px;
   font-size: 9rem;
   color: var(--light-shade-3);
-  z-index: 1;
+  z-index: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -176,9 +178,9 @@ section.me {
 section.exp {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height: 110vh;
+  flex-flow: wrap;
+  justify-content: space-between;
+  height: max-content;
   width: 70vw;
   margin: auto;
   padding-top: 120px;
@@ -198,7 +200,7 @@ section.exp {
   font-size: 6rem;
   position: absolute;
   top: 350px;
-  right: -320px;
+  right: -340px;
 }
 
 @media screen and (max-width: 800px) {
@@ -211,6 +213,11 @@ section.exp {
 
 .exp-container {
   width: 21%;
+  transition: transform 0.2s ease-out 0.1s;
+}
+
+.exp-container:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 800px) {
@@ -221,6 +228,7 @@ section.exp {
 }
 
 .number {
+  display: block;
   position: relative;
   left: -10px;
   font-size: 11rem;
@@ -233,7 +241,7 @@ section.exp h4 {
   margin-bottom: 20px;
 }
 
-section.exp h4 .desc {
+section.exp .desc {
   font-size: 1.125rem;
 }
 
@@ -241,8 +249,12 @@ section.exp .detail {
   font-family: 'Raleway', sans-serif;
 }
 
-section.exp > div {
+section.exp>div {
   position: relative;
+}
+
+#exp-5 {
+  margin-left: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -251,5 +263,6 @@ section.exp > div {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    margin: 0px;
   }
 }

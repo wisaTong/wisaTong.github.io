@@ -213,7 +213,7 @@ section.exp {
 
 .exp-container {
   width: 21%;
-  transition: transform .2s ease-out, left .2s ease, top .2s ease;
+  transition: transform .2s ease-out, left .2s linear, top .2s linear;
 }
 
 .exp-container:hover {

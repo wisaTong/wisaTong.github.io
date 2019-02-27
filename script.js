@@ -1,13 +1,11 @@
 window.onscroll = () => { scrollMoveV() };
 document.onmousemove = onmousemove;
 
-var currentTop = document.scrollTop;
-
 //reset position of decorator
 document.scrollTop = 0;
 const decorators = document.getElementsByClassName('v-decorator');
 const tops = [].slice.call(decorators).map(dec => dec.offsetTop);
-document.scrollTop = currentTop;
+// document.scrollTop = currentTop;
 
 const hidden = {
   visibility: 'hidden'
@@ -66,7 +64,7 @@ function scrollMoveV() {
   navItems.map(item => item.style = null);
 
   if (scroll < me.offsetHeight) {
-    setStyle(navItems[0], active)
+    setStyle(navItems[0], active);
     if (scroll > 0) {
       decorators[0].style.top = (tops[0] - scroll / 3) + 'px';
       decorators[1].style.top = (tops[1] - scroll / 1.5) + 'px';
@@ -75,13 +73,13 @@ function scrollMoveV() {
     var opacity = 1 - (scroll / me.offsetHeight);
     [].slice.call(decorators).forEach(em => em.style.opacity = opacity);
   } else if (scroll < exp.offsetHeight + exp.offsetTop) {
-    setStyle(navItems[1], active)
+    setStyle(navItems[1], active);
     var offsetTop = exp.offsetTop;
-    hExp.style.top = (hExpTop + (scroll - offsetTop - 50) / 1.2) + 'px';
+    hExp.style.top = (hExpTop + (scroll - offsetTop + 45) / 1.2) + 'px';
   } else if (scroll < work.offsetHeight + work.offsetTop) {
-    setStyle(navItems[2], active)
+    setStyle(navItems[2], active);
   } else if (scroll < contact.offsetHeight + contact.offsetTop) {
-    setStyle(navItems[3], active)
+    setStyle(navItems[3], active);
   }
 }
 
@@ -89,16 +87,18 @@ function onmousemove(e) {
   const xMax = 20; // max X to move in px
   const yMax = 20;
 
-  var middleX = clientWidth / 2;
-  var middleY = clientHeight / 2;
+  // var middleX = clientWidth / 2;
+  // var middleY = clientHeight / 2;
 
-  var dx = (e.pageX - middleX) / middleX;
-  var dy = (e.pageY - middleY) / middleY;
+  // var dx = (e.pageX - middleX) / middleX;
+  // var dy = (e.pageY - middleY) / middleY;
 
-  var moveX = dx * xMax;
-  var moveY = dy * yMax;
-  exps.forEach(em => em.style.left = moveX + 'px');
-  exps.forEach(em => em.style.top = moveY + 'px');
+  // var moveX = dx * xMax;
+  // var moveY = dy * yMax;
+
+  // exps.forEach(em => em.style.left = moveX + 'px');
+  // exps.forEach(em => em.style.top = moveY + 'px');
+  // hExp.style.right = - moveX - 340 + 'px';
 }
 
 function setStyle(em, style) {

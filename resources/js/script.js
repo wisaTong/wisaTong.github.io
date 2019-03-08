@@ -7,6 +7,8 @@ const decorators = document.getElementsByClassName('v-decorator');
 const tops = [].slice.call(decorators).map(dec => dec.offsetTop);
 // document.scrollTop = currentTop;
 
+const cursor = document.getElementById('cursor');
+
 const hidden = {
   visibility: 'hidden'
   , opacity: 0
@@ -86,6 +88,9 @@ function scrollMoveV() {
 function onmousemove(e) {
   const xMax = 20; // max X to move in px
   const yMax = 20;
+
+  cursor.style.left = e.clientX - 30 + 'px';
+  cursor.style.top = e.clientY - 30 + 'px';
 
   // var middleX = clientWidth / 2;
   // var middleY = clientHeight / 2;

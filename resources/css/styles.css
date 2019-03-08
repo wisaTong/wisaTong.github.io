@@ -20,12 +20,25 @@ html {
   scroll-behavior: smooth;
   font-family: 'Archivo', sans-serif;
   font-weight: 500;
-  cursor: url('cursor.png') 60 60, auto;
+  cursor: url('./images/cursor.png') 30 30, auto;
 }
 
 body {
   overflow-x: hidden;
   background-image: linear-gradient(8deg, var(--dark-shade-3), var(--dark-shade-1));
+}
+
+.cursor {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-red);
+  /* transition: top .1s .005s linear, left .2s .005s linear, transform .3s ease; */
+  transition: all .5s ease-out;
+  transform: none;
 }
 
 .navbar {
@@ -177,8 +190,7 @@ section.me {
 
 section.exp {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   height: max-content;
   width: 70vw;
@@ -251,10 +263,6 @@ section.exp .detail {
 
 section.exp>div {
   position: relative;
-}
-
-#exp-5 {
-  margin-left: auto;
 }
 
 @media screen and (max-width: 800px) {

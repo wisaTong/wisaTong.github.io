@@ -1,135 +1,143 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
+  <head>
+    <title>Wisa Powthongchin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    @media only screen and (min-width: 768px) {
+      body {
+        width: 60vw;
+        margin: auto;
+      }
+    }
 
-<head>
-  <meta charset='UTF-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wisa - Portfolio</title>
+    body {
+      margin-bottom: 1rem;
+    }
+  </style>
+  <body>
+    <header id="top">
+      <h1>Wisa Powthongchin</h1>
 
-  <!-- Web fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Archivo|Playfair+Display:400,700,900|Roboto:400,700|Raleway:300,400'
-    rel='stylesheet'>
+      <address>
+        0859365127
+        •
+        wisa.po@ku.th
+        •
+        <a href="https://github.com/wisaTong">Github</a>
+      </address>
+      
+      <hr>
+      <q>Reject Modernity, Return to Monke</q>
+      <hr>
+      <nav>
+        <h2>Navigation</h2>
+        <a href="#01">Work Experience</a>
+        •
+        <a href="#02">Education</a>
+        •
+        <a href="#03">Skill</a>
+      </nav>
+      <hr>
+      
+      <h2>Why is this page so beautiful?</h2>
+      <p>
+        <em>Because <strong>HTML</strong> is sexy.</em> 
+      </p>
+      <hr>
 
-  <!-- css -->
-  <link rel='stylesheet' href='resources/css/styles.css' type='text/css'>
+      <h2>Current Interests</h2>
+      <p>
+        Container technology is so hot right now. Currently working on final graduating project
+        in university. The project is creating a secure webserver that can run service using container technology
+        like <code>namespaces</code> and <code>cgroups</code>. I really interest in smallest possible container environment
+        for your everyday application.
+      </p>
+      <p>
+        GNU/Linux is also my interest. Gentoo is my daily driver on my laptop.
+      </p>
+      <p>
+        Next stop after I'm statisfied with container technology might be embedded software.
+        I'm planning on learning <i>Rust</i> or <i>C</i> in near future.
+      </p>
 
-  <!-- scipts -->
-  <script src='resources/js/script.js' async></script>
-</head>
+      <hr>
 
-<body>
-  <div class='cursor' id='cursor'>
+      <section id="01">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <h3>Kasikorn Business-Technology Group</h3>
+            <i>Jun 2020 - Nov 2020 as Backend Developer</i>
+            <p>
+              Worked on batch process using <mark>Golang</mark>.
+            </p>
+          </li>
+          <li>
+            <h3>VISTEC</h3>
+            <i>Jun 2019 - Sep 2019 as Developer</i>
+            <p>
+              Worked on Internal project using <mark>NodeJs, React, Vue, and Django</mark>.
+              During the internship period also exposed to several <abbr title="Natural Language Processing">NLP</abbr>
+              and machine learning researches.
+            </p>
+          </li>
+          <li>
+            <h3>Senate System Corp</h3>
+            <i>Feb 2019 - May 2019 as Outsource Mobile Developer</i>
+            <p>
+              Developed a mobile application on both Android and IOS using <mark>Java and Swift</mark> respectively.
+            </p>
+          </li>
+          <li>
+            <h3>Billme co.</h3>
+            <i>Jun 2018 - Sep 2018 as Junior Backend Developer</i>
+            <p>
+              Developed micorservices using <mark>Scala</mark> writing in functional programming style.
+            </p>
+          </li>
+        </ul>
+      </section>
 
-  </div>
-  <div class='navbar' id='navbar'>
-    <a class='contact' id='contact' href='#sect-contact'>Contact</a>
-    <a class='pastwork' id='works' href='#sect-work'>Past works</a>
-    <a class='experience' id='exp' href='#sect-exp'>Experiences</a>
-    <a class='me' id='me' href='#'>Me</a>
-  </div>
+      <hr>
 
-  <div class='page'>
-    <section class='me' id='sect-me'>
-      <span class='v-decorator name rotate-90'>name</span>
-      <h1 class='h-name' id='wisa'>WISA</h1>
-      <span class='v-decorator me rotate-90'>Me</span>
-      <span class='v-decorator about rotate-90'>about</span>
-      <div class='about-me' id='about-me'>
+      <section id="02">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <h3>Kasetsart University</h3>
+            <p>
+              Software and Knowledge Engineering Program, Faculty of Engineering
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="03">
+        <h2>Skill</h2>
+        <h3>Programming Language that I am happy working with</h3>
+        <ul>
+          <li>Golang - a little stiff but reliable</li>
+          <li>Scala - really love the functional paradigm <3</li>
+          <li>Javascript - cool. love. also hate.</li>
+          <li>etc. any thing is cool. happy to learn</li>
+        </ul>
+        <h3>Frameworks</h3>
         <p>
-          Name: Wisa Powthongchin ( Tong ) <br>
-          Software Engineering student at Kasetsart University with passion and deep interest in programming.
-          Fast learner, Knowledge craving, and Humanist.
+          Have experience with most popular frameworks,
+          but I prefer minimalist approach and go for as little frameworks and external libraries as possible.
         </p>
-        <br>
-        <p>Me.</p>
-      </div>
-    </section>
+      </section>
 
-    <section class='exp' id='sect-exp'>
-      <h3 class='h-exp rotate-90' id='h-exp'>Experiences</h3>
-      <div class='exp-container' id='exp-1'>
-        <span class='number'>1</span>
-        <h4>
-          Billme Internship <br>
-          <span class='desc'>via The Internship 2018</span>
-        </h4>
-        <p class='detail'>
-          Intership at Billme ( Thailand ) as junior developer.
-          Develop backend services with <em>Scala</em> programming language got experience
-          with <br>          
-          • <em>PostgreSQL</em> <br>
-          • <em>Apache Kafka</em> <br>
-          • <em>Akka</em> library <br>
-           during the internship period.
-        </p>
-      </div>
+      <hr>
 
-      <div class='exp-container no-offset' id='exp-2'>
-        <span class='number'>2</span>
-        <h4>
-          Messenger Post Driver <br>
-          <span class='desc'>for Senate system corp. <br> Android + iOS</span>
-        </h4>
-        <p class='detail'>
-          Develop mobile application as freelance for both Android and iOS.
-          Android development using <em>Java</em>. <br> iOS development using <em>Swift</em>
-        </p>
-      </div>
-
-      <div class='exp-container' id='exp-3'>
-        <span class='number'>3</span>
-        <h4>
-          Teaching assistant <br>
-          <span class='desc'>Object oriented programming I <br> Kasetsart University</span>
-        </h4>
-        <p class='detail'>
-          Teaching assistant in Object oriented programming I class,
-          using <em>Python</em> programming language
-        </p>
-      </div>
-
-      <div class='exp-container' id='exp-4'>
-        <span class='number'>4</span>
-        <h4>
-          Angelhack participation<br>
-          <span class='desc'>Bangkok Hackathon 2018</span>
-        </h4>
-        <p class='detail'>
-          In the topic of <em>Improving city life with AI technology</em>. <br>
-          <br> Project: Caffeine <br>
-          (recommendation system) <br>
-          <br> Our group created recommendation system based on collaborative filtering
-          , using <em>Python</em> and <em>Implicit library</em> which we 
-          implemented as web application for finding near by Cafe based on 
-          past cafe user have visited.
-        </p>
-      </div>
-
-      <div class='exp-container' id='exp-5'>
-        <span class='number'>5</span>
-        <h4>
-          Stupidhack participation<br>
-          <span class='desc'>The Stupid Hackathon Thailand #2</span>
-        </h4>
-        <p class='detail'>
-          Hackathon for developer to have fun and build fun things together :D <br>
-          <br>
-          Project: Wikipedia linker <br>
-          <br>
-          An application that recursively find how many link you have to
-          click from one page to reach another page on Wikipedia.
-        </p>
-      </div>
-    </section>
-
-    <section class='work' id='sect-work'>
-
-    </section>
-
-    <section class='contact' id='sect-contact'>
-
-    </section>
-  </div>
-</body>
-
+      <footer>
+        <a href="#top">Top of page</a>
+      </footer>
+    </header>
+  </body>
 </html>
+

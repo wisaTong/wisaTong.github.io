@@ -1,0 +1,63 @@
+name: Wisa Powthongchin 
+contact:
+  phone: 0859365127
+  email: wisa.pow@gmail.com
+  github: https://github.com/wisaTong
+experience:
+  - name: Kasikorn Business - Technology Group
+    date: Jun 2020 - Nov 2020
+    position: Backend Developer
+    description: Worked on batch processing using Golang
+  - name: VISTEC
+    date: Jun 2019 - Sep 2019 as Developer
+    position: Developer
+    description: >
+      Worked on Internal project using Node.js, React, Vue, and Django during
+      the internship period, and also got exposed to several NLP and machine
+      learning researches there.
+  - name: Senate System Corp
+    date: Feb 2019 - May 2019
+    position: Outsource Mobile Developer
+    description: >
+      Worked with existing team to develop new features for mobile applications
+      on Android and IOS using Java and Swift respectively
+  - name: Billme co.
+    date: Jun 2018 - Sep 2018
+    positon: Junior Backend Developer
+    description: >
+      Developed micoservices using Scala writing in functional programming
+      style.
+education:
+  - degree: Bachelor
+    major: Software and Knowledge Engineering
+    institute: >
+      Kasetsart University, Faculty of Engineering, Software and Knowledge
+      Engineering program.
+skill:
+  - section: Programming Language that I'm happy to be working with
+    description: Anylanguage is cool. Happy to learn.
+    item:
+      - Rust
+      - Golang
+      - Scala
+      - Javascript
+  - section: Linux
+    description: >
+      Currently run Gentoo Linux on my main machine and laptop. Have good
+      knowledge of shell commands and GNU utility programs. 
+  - section: Other
+    item:
+      - name: Container Technology
+        description: >
+          Hand-on experiences with Docker. Have good knowledge and deep
+          understanding of how container works from working on 4th year final
+          project at Kasetsart University. 
+      - name: CI/CD
+        description: >
+          Have written Gitlab-CI pipeline for deploying container to
+          development, staging, and production environment. 
+      - name: Google Cloud Platform (GCP)
+        description: >
+          Real world experience setting up CloudRun, CloudSQL instances, and
+          CloudStorage for a project, and little bit of experience on
+          Kubernetes from university project. 

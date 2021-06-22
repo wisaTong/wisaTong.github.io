@@ -5,24 +5,24 @@ contact:
   github: https://github.com/wisaTong
 experience:
   - name: Kasikorn Business - Technology Group
-    date: Jun 2020 - Nov 2020
+    date: Jun 2020 | Nov 2020
     position: Backend Developer
     description: Worked on batch processing using Golang
   - name: VISTEC
-    date: Jun 2019 - Sep 2019 as Developer
+    date: Jun 2019 | Sep 2019 as Developer
     position: Developer
     description: >
       Worked on Internal project using Node.js, React, Vue, and Django during
       the internship period, and also got exposed to several NLP and machine
       learning researches there.
   - name: Senate System Corp
-    date: Feb 2019 - May 2019
+    date: Feb 2019 | May 2019
     position: Outsource Mobile Developer
     description: >
       Worked with existing team to develop new features for mobile applications
       on Android and IOS using Java and Swift respectively
   - name: Billme co.
-    date: Jun 2018 - Sep 2018
+    date: Jun 2018 | Sep 2018
     positon: Junior Backend Developer
     description: >
       Developed micoservices using Scala writing in functional programming

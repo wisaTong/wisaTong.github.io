@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue
+}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\LARGE\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\large\bfseries}
+{}
+{0em}
+{}
+
+\renewcommand{\maketitle}{
+  \begin{center}
+  {\huge\bfseries\theauthor}
+
+  \vspace{1em}
+  %PLUG_CONTACT
+    email: wisa.pow@gmail.com | phone: 085-936-5127 | github: \href{https://github.com/wisaTong}{wisaTong}
+  \end{center}
+}
+
+\begin{document}
+\title{R\'esum\'e}
+\author{Wisa Powthongchin}
+
+\pagenumbering{gobble}
+\maketitle
+
+%PLUG_EXPERIENCE
+\section{Experiences}
+\begin{itemize}[font=\itshape, leftmargin=4cm, itemsep=.75em, labelsep=2em]
+  \item[Jun 2020|Nov 2020]\textbf{\large Kasikorn Business and Technology Group (KBTG)}
+
+    Worked on batch processing using Golang.
+  \item[Jun 2019|Sep 2019]\textbf{\large VISTEC}
+
+    Worked on internal projects using Node.js, React, Vue, and Django. During
+    the internship period, also exposed to several NLP and machine learning
+    researches. 
+  \item[Feb 2019|May 2019]\textbf{\large Senate System Corp}
+
+    Developed a mobile application on both Android and IOS using Java and Swift
+    respectively. 
+  \item[Jun 2018|Sep 2018]\textbf{\large Billme co.}
+
+     Developed micorservices using Scala writing in functional programming
+     style. 
+\end{itemize}
+
+%PLUG_EDUCATION
+\section{Education}
+\subsection{Bachelor's Degree|Software and Knowledge Engineering}
+Kasetsart University, Faculty of Engineering, Software and Knowledge Engineering program.
+
+\section{Skills}
+\subsection{Programming Language that I'm happy working with}
+\begin{multicols}{2}
+  \begin{itemize}
+    \item Rust
+    \item Golang
+    \item Scala
+    \item Javascript
+  \end{itemize}
+\end{multicols}
+Happy to learn new languages.
+\subsection{Linux}
+Currently run Gentoo Linux on my main machine and laptop. Have good knowledge
+of shell commands and GNU utility programs. 
+
+\subsection{Other}
+\begin{itemize}
+  \item Container Technology|Hand-on experiences with Docker. Have good
+    knowledge and deep understanding of how container works from working on 4th
+    year final project at Kasetsart University.
+
+  \item CI/CD|Have written Gitlab-CI pipeline for deploying container to
+    development, staging, and production environment. 
+
+  \item Google Cloud Platform|Real world experience setting up CloudRun,
+    CloudSQL instances, and CloudStorage for a project, and little bit of
+    experience on Kubernetes from university project. 
+\end{itemize}
+
+
+\end{document}
